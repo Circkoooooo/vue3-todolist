@@ -1,0 +1,32 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: AlibabaPuhui;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	.header {
+		height: 60px;
+		width: 100%;
+		background-color: @primary-color;
+	}
+
+	.main {
+		flex: 1;
+		display: flex;
+
+		.aside {
+			width: 240px;
+			height: 100%;
+			background-color: @light-color;
+		}
+
+		.content {
+			flex: 1;
+		}
+	}
+}
